@@ -23,7 +23,7 @@ search_in_file() {
     local fileName="$2"
     local lineNum=1
 
-    while IFS= read -r line; do
+    while IFS= read -r line  || [[ -n "$line" ]]; do
         local foundMatch=false
         for word in $line; do
             if [[ ${word,,} == "${searchWord,,}" ]]; then
