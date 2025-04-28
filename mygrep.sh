@@ -80,6 +80,11 @@ elif [[ -z $1 ]]; then
     echo "You need to specify a search word"
     exit
 elif [[ -z $2 ]]; then
+    if [[ "$1" =~ \.(txt|pdf|docx?|csv|json|xml|log|conf|ini)$ ]]; then
+        echo "You need to specify a search word"
+        exit
+    fi
+
     echo "File not specified. Do you want to search the whole directory? [y/N]"
     read -r response
     if [[ ${response,,} == "y" ]]; then
