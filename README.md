@@ -20,3 +20,9 @@ I would split the search function into smaller parts. Right now it just checks w
 
 ## Hardest part:
 The task was easy overall because the functionalities were simple for now. However, if there were more functionalities there will be a need for a more optimization. The hardest part was dealing with argument order and making sure the script didn’t break if options or files were missing or written in a weird way.
+
+## References:
+1. https://devhints.io/bash
+2. https://kodekloud.com/blog/bash-getopts/
+3. https://stackoverflow.com/questions/10929453/read-a-file-line-by-line-assigning-the-value-to-a-variable
+4. GitHub Copilot (in debugging)
